@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Meta descripción para SEO -->
-    <meta name="description" content="Solicitud de Cotización en construcción.">
-    <!-- Título de la página -->
-    <title>Diseña tu codigo</title>
-    <!-- Enlace al archivo CSS externo -->
+    <title>Diseña tu cuento</title>
     <link rel="stylesheet" href="Styles.css">
 </head>
+
 <body>
     <!-- Sección de encabezado -->
     <header>
@@ -19,7 +16,7 @@
                 <div class="customer-support">
                     <i class="fa-solid fa-headset" aria-hidden="true"></i>
                     <div class="content-customer-support">
-                        <span class="Text"> Diseña tu cuento </span>
+                        <span class="Text"> Soporte al cliente </span>
                         <p> <a href="tel:+573108454473">+57 310 845 4473</a></p>
                     </div>
                 </div>
@@ -52,7 +49,7 @@
                     <li><a href="tienda.html">Nuestra Tienda On-line</a></li>
                     <li><a href="servicios.html">Servicios</a></li>
                     <li><a href="contacto.html">Contáctenos</a></li>
-                    <li><a href="cotizacion.html">Solicitud de Cotización</a></li>
+                    <li><a href="Diseña tu cuento.html">Diseña tu cuento</a></li>
                 </ul>
                 <!-- Formulario de búsqueda -->
                 <form class="search-form">
@@ -64,15 +61,38 @@
             </nav>   
         </div>
     </header>
+<div class="Container-cuento">
+    <h1>Diseña tu cuento</h1>
+    <form id="cuentoForm">
+        <label for="nombres">Nombres y Apellidos:</label>
+        <input type="text" id="nombres" required><br><br>
+
+        <label for="apodo">Apodo:</label>
+        <input type="text" id="apodo" required><br><br>
+
+        <label for="colorCabello">Color de Cabello:</label>
+        <input type="text" id="colorCabello" required><br><br>
+
+        <label for="colorOjos">Color de Ojos:</label>
+        <input type="text" id="colorOjos" required><br><br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" required><br><br>
+
+        <label for="hobby">Hobby (Solo uno):</label>
+        <input type="text" id="hobby" required><br><br>
+
+        <button type="submit">Continuar</button>
+    </form>
+
+
+    <h2>Tu cuento:</h2>
+    <div class="container-cuento" id="cuento"></div>
+
+
+    <script src="script.js"></script>
+</div>
     
-    <!-- Contenido principal -->
-    <main class="main-content">
-        <!-- Sección de solicitud de cotización -->
-        <section id="quote-request" class="container quote-request">
-            <h1 class="heading-1">Solicitud de Cotización</h1>
-            <h2>Estamos trabajando en esta sección. Pronto podrás solicitar una cotización personalizada para tus productos favoritos. ¡Vuelve pronto para más detalles!</h2>
-        </section>
-    </main>
 
     <!-- Sección de pie de página -->
     <footer class="footer">
@@ -89,6 +109,5 @@
 
     <!-- Enlace al script de FontAwesome para iconos -->
     <script src="https://kit.fontawesome.com/96260bb030.js" crossorigin="anonymous"></script>
-
 </body>
 </html>
